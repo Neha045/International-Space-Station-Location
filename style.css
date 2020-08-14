@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+#issmap{
+    height: 400px;
+    width: 600px;
+    margin:20px auto;
+}
+
