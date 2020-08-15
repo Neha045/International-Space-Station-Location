@@ -12,13 +12,13 @@ const tileUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 const tiles = L.tileLayer(tileUrl, { attribution });
 tiles.addTo(issMap);
 
-const api_url = "http://api.open-notify.org/iss-now.json";
+const api_url = "https://api.wheretheiss.at/v1/satellites/25544";
 let first = true;
 
 async function getIss(){
     const response = await fetch(api_url);
     const data = await response.json()
-    const { latitude, longitude } = data.iss_position;
+    const { latitude, longitude } = data;
     document.getElementById('lat').textContent = latitude;
     document.getElementById('lon').textContent = longitude;
     if(first){
