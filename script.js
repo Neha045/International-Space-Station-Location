@@ -19,8 +19,8 @@ async function getIss(){
     const response = await fetch(api_url);
     const data = await response.json()
     const { latitude, longitude } = data;
-    document.getElementById('lat').textContent = latitude;
-    document.getElementById('lon').textContent = longitude;
+    document.getElementById('lat').textContent = latitude.toFixed(2);
+    document.getElementById('lon').textContent = longitude.toFixed(2);
     if(first){
         issMap.setView([latitude, longitude], 3);
         first = false;
