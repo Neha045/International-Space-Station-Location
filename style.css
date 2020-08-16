@@ -12,7 +12,6 @@ h1{
     border-right: 3px solid rgba(233, 233, 233, 0.829);
     width: 300px;
     margin: 20px auto;
-    transition: all 1s;
 }
 #issmap{
     height: 400px;
@@ -22,9 +21,6 @@ h1{
 }
 
 #issmap:hover{
-    transform: scale(1.1);
-}
-h1:hover{
     transform: scale(1.1);
 }
 
